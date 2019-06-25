@@ -1,0 +1,11 @@
+
+<ol>
+  <li *ngFor="let train of result$?.trains">
+    
+    <ul>
+      <li>Train:{{train?.name}}</li>
+      <li>Source departure time :{{train?.src_departure_time}}</li>
+      <li>Destination arrival time :{{train?.dest_arrival_time}}</li>
+    </ul>
+  </li>
+</ol>

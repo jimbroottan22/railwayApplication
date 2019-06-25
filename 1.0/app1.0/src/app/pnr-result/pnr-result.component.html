@@ -1,0 +1,18 @@
+
+<p>PNR NUM:{{pnrnum$?.pnr}}</p>
+<p>Date of Journey:{{pnrnum$?.doj}}</p>
+<p>Train num:{{pnrnum$?.train?.number}}</p>
+<p>Train :{{pnrnum$?.train?.name}}</p>
+<p>Boarding point:{{pnrnum$?.boarding_point?.name}}   {{pnrnum$?.boarding_point?.code}}</p>
+<p>Reservation Upto:{{pnrnum$?.reservation_upto?.name}} {{pnrnum$?.reservation_upto?.code}} </p>
+<p>Passengers:</p>
+<ul *ngFor="let passengers of pnrnum$?.passengers">
+    
+
+    
+      <li>No:{{ passengers.no }}</li>
+      <li>Current Status:{{passengers.current_status}}</li>
+      <li>Booking Status:{{passengers.booking_status}}</li>
+    
+  
+</ul>
